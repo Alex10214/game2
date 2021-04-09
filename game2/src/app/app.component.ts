@@ -23,8 +23,8 @@ export class AppComponent implements OnInit{
     this.gameController.computerScore$.subscribe(score => { this.pcScore = score; this.reset(score); });
   }
   checkInterval(): void {
-    console.log(typeof(this.check));
-    if ( this.interval < this.check || this.interval !== this.check) {
+    this.interval = +this.interval;
+    if ( this.interval <= this.check) {
       this.gameController.isShowPopupCheck = true;
       this.interval = 1000;
     } else if (this.interval > 0) {

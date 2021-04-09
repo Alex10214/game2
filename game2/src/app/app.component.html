@@ -4,13 +4,10 @@
   </div>
   <app-screen-component></app-screen-component>
   <div class="form-container" >
-    <form>
       <div class="form-control">
         <label for="inpMS">Enter period (ms)</label>
         <input id="inpMS" type="number" (keyup)="onKey($event)" value="{{interval}}">
       </div>
-    </form>
-
   </div>
   <button type="button" (click)="checkInterval()" [disabled]="this.gameController.isGameProceed">Start</button>
 </div>
