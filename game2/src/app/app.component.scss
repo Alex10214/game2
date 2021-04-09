@@ -1,0 +1,75 @@
+.score {
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+
+  span {
+    color: firebrick;
+    font-weight: bold;
+  }
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  margin: 50px auto;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    height: 32px;
+    padding: 0 5px;
+    background: white;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+.winner {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+
+  &.player {
+    color: forestgreen;
+  }
+
+  &.computer {
+    color: firebrick;
+  }
+}
+
+button {
+  display: block;
+  width: 150px;
+  height: 32px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  background: firebrick;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &[disabled] {
+    opacity:  .5;
+  }
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+
+  .score {
+    margin: 10px 50px;
+  }
+}

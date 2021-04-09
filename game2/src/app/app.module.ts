@@ -2,19 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {ScreenComponentComponent} from "./components/screen-component/screen-component.component";
-import {ScoreComponentComponent} from "./components/score-component/score-component.component";
-import {PopupComponentComponent} from "./components/popup-component/popup-component.component";
+import {ScreenComponentComponent} from './components/screen-component/screen-component.component';
+import {PopupComponentComponent} from './components/popup-component/popup-component.component';
+import { GameCellComponent } from './components/game-cell/game-cell.component';
+import { PopupCheckComponentComponent } from './components/popup-check-component/popup-check-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScreenComponentComponent,
-    ScoreComponentComponent,
     PopupComponentComponent,
+    GameCellComponent,
+    PopupCheckComponentComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
-<div class="greed">
-
+<div class="grid">
+  <ng-template ngFor let-item [ngForOf]="cells">
+    <app-game-cell [currentCell]="item"></app-game-cell>
+  </ng-template>
 </div>

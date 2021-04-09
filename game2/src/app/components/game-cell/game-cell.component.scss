@@ -1,0 +1,17 @@
+div {
+  height: 100%;
+  background: blue;
+  cursor: pointer;
+
+  &.active {
+    background: wheat;
+  }
+
+  &.is-player-win {
+    background: forestgreen;
+  }
+
+  &.is-computer-win {
+    background: firebrick;
+  }
+}

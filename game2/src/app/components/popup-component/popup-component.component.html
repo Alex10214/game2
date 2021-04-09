@@ -1,1 +1,19 @@
-<p>popup-component works!</p>
+<div class="popup">
+  <div class="result">
+    <div class="score">
+      Your score:
+      <span>{{usScore}}</span>
+    </div>
+    <div class="score">
+      Computer score:
+      <span>{{pcScore}}</span>
+    </div>
+    <div class="winner player" *ngIf="checkWin == false">
+      You win!
+    </div>
+    <div class="winner computer" *ngIf="checkWin === true">
+      You lose!
+    </div>
+    <button (click)="close()">Close!</button>
+  </div>
+</div>
